@@ -23,7 +23,7 @@ jobs:
         run: ls -R dist
 
       - name: Push
-        uses: s0/git-publish-subdir-action@v1
+        uses: s0/git-publish-subdir-action@v2.6.0
         env:
           REPO: self
           BRANCH: build
