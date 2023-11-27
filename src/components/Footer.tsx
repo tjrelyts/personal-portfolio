@@ -1,21 +1,7 @@
 const Footer = () => {
   return (
-    <div className="relative h-36">
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -z-10">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="relative block w-full h-24 z-0"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="fill-[#14213d]"
-          ></path>
-        </svg>
-      </div>
-      <div className="py-5 text-center">
+    <div className="bg-[#090a0f] w-full h-full">
+      <div className="flex flex-col items-center justify-center h-full">
         <div className="container max-w-screen-lg mx-auto">
           <div>
             <div className="flex flex-wrap justify-center gap-2">
@@ -23,7 +9,7 @@ const Footer = () => {
                 href="https://linkedin.com/in/tylersanto"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+                className="bg-white p-2 font-semibold text-black inline-flex items-center rounded-full"
               >
                 <svg
                   className="w-5 h-5 fill-current"
@@ -40,7 +26,7 @@ const Footer = () => {
                 href="https://github.com/tjrelyts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+                className="bg-white p-2 font-semibold text-black inline-flex items-center rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-sm mt-2  opacity-50">
+        <p className="text-sm mt-5 text-white">
           &copy; {new Date().getFullYear()} Tyler J. Santosuosso. All rights
           reserved.
         </p>
