@@ -21,6 +21,7 @@ const PortfolioItem = ({ title, imgURL, stack, link, text }: Props) => {
             {stack.map((item) => (
               <span className="inline-block px-2 font-bold text-lg border-2 border-black rounded-md ">
                 {item}
+                {title}
               </span>
             ))}
           </p>
