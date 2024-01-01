@@ -30,7 +30,7 @@ const NavBar = () => {
         rel="noopener noreferrer"
         className="select-none text-4xl m-6 font-bold text-white"
       >
-        <span className="text-[#fca311]">T</span>S
+        <span className="text-[#B5FED9]">T</span>S
       </a>
       <div
         onClick={() => setNav(!nav)}

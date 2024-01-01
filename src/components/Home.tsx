@@ -7,9 +7,9 @@ const Home = () => {
       id="home"
       className="flex flex-col h-screen w-full items-center justify-center flex-wrap select-none"
     >
-      <div className="flex flex-col justify-center py-14 text-center md:text-left text-[#fca311]">
+      <div className="flex flex-col justify-center py-14 text-center md:text-left text-white">
         <h1 className="flex font-bold text-4xl md:text-6xl justify-center md:justify-normal whitespace-pre">
-          Tyler <span className="text-[#ffffff]">Santosuosso</span>
+          <span className="text-[#B5FED9]">Tyler</span> Santosuosso
         </h1>
         <p className="max-w-sm text-lg font-semibold"></p>
       </div>

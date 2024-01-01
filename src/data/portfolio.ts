@@ -1,16 +1,9 @@
 export default [
-  {
-    title: "Portfolio Website",
-    imgURL: "https://placehold.co/512x256",
-    stack: ["React", "Tailwind", "Vite", "TypeScript"],
-    link: "#home",
-    text: "A personal website to display my projects and to test my knowledge of the stack I used.",
-  },
-  {
+  /*{
     title: "Dave's Book Emporium",
     imgURL: "https://placehold.co/512x256",
     stack: ["SQL"],
-    link: "",
-    text: "",
-  },
+    link: "https://drive.google.com/drive/folders/1SkYXf35wzxxc76SCFzEjMN4CdBshciV4?usp=drive_link",
+    text: "A representation of an online bookstore created as a final project for my Database Systems class. This project required teamwork, communication, presentation skills, and SQL knowledge to create. ",
+  },*/
 ];
