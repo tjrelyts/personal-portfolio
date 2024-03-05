@@ -12,6 +12,7 @@ const PortfolioItem = ({ title, imgURL, stack, link, text }: Props) => {
       <div className="relative w-[480px] h-[240px]">
         <img
           src={imgURL}
+          alt={text}
           className="object-cover w-full h-full rounded-lg"
         ></img>
         <div className="absolute bg-black opacity-0 w-full h-full top-0 rounded-lg group-hover:opacity-75 duration-500">
