@@ -9,7 +9,7 @@ interface Props {
 const PortfolioItem = ({ title, imgURL, stack, link, text }: Props) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="group">
-      <div className="relative w-[480px] h-[240px]">
+      <div className="relative w-full max-w-[480px] h-auto">
         <img
           src={imgURL}
           alt={text}

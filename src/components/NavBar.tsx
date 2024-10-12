@@ -8,18 +8,17 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
+      tabName: "home",
     },
     {
       id: 2,
       link: "work",
+      tabName: "work",
     },
     {
       id: 3,
-      link: "devblog",
-    },
-    {
-      id: 4,
-      link: "contact",
+      link: "https://blog.tylerjsanto.com/",
+      tabName: "devblog",
     },
   ];
 
@@ -39,17 +38,17 @@ const NavBar = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       <ul
-        className={`-z-10 flex flex-row justify-center items-center absolute w-full transition-all duration-300 md:hidden ${
+        className={`-z-10 flex flex-row justify-center absolute w-[80%] transition-all duration-300 md:hidden bg-slate-900 rounded-lg ${
           nav ? "top-20 opacity-100" : "-top-20"
-        } opacity-0`}
+        } opacity-0 mx-auto left-1/2 transform -translate-x-1/2`}
       >
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, tabName }) => (
           <li
             key={id}
             className="text-white select-none cursor-pointer uppercase py-4 px-2 font-bold text-xl hover:text-[#e5e5e5] ease-out duration-100"
           >
-            <a href={`#${link}`} rel="noopener noreferrer">
-              {link}
+            <a href={`${link}`} rel="noopener noreferrer">
+              {tabName}
             </a>
           </li>
         ))}
