@@ -1,25 +1,24 @@
-name: Build and Deploy
+name: Generate a build and push to another branch
 on:
   push:
     branches:
       - main
-permissions:
-  contents: write
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  build:
     runs-on: ubuntu-latest
+    name: Build and Push
     steps:
-      - name: Checkout 🛎️
+      - name: git-checkout
         uses: actions/checkout@v4
-
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build # The folder the action should deploy.
-          branch: gh-pages
+      - name: Install all dependencies
+        run: npm install
+      - name: Build
+        run: npm run build # The build command of your project
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages # The branch name where you want to push the assets
+          FOLDER: dist # The directory where your assets are generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          MESSAGE: "Build: ({sha}) {msg}" # The commit message
