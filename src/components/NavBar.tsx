@@ -12,13 +12,8 @@ const NavBar = () => {
     },
     {
       id: 2,
-      link: "work",
+      link: "portfolio",
       tabName: "work",
-    },
-    {
-      id: 3,
-      link: "https://blog.tylerjsanto.com/",
-      tabName: "devblog",
     },
   ];
 
@@ -47,7 +42,7 @@ const NavBar = () => {
             key={id}
             className="text-white select-none cursor-pointer uppercase py-4 px-2 font-bold text-xl hover:text-[#e5e5e5] ease-out duration-100"
           >
-            <a href={`${link}`} rel="noopener noreferrer">
+            <a href={`#${link}`} rel="noopener noreferrer">
               {tabName}
             </a>
           </li>

@@ -2,9 +2,9 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import ParticleBG from "./components/ParticleBG";
+import Portfolio from "./components/Portfolio";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import WIP from "./components/WIP";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
               "radial-gradient(circle at bottom, #1b2735 50%, #090a0f 75%)",
           }}
         >
-          <WIP />
+          <Portfolio />
         </ParallaxLayer>
         <ParallaxLayer offset={2.25} factor={0.25}>
           <Footer />
